@@ -1,6 +1,6 @@
 # Hi, I'm Toni 👋
 
-*Computer science, from the bottom up, in five lines of mathematics.*
+*Cheat*
 
 **1 · Logic.** One gate is enough for every Boolean function $f:\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace$:
 
