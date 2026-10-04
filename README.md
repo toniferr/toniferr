@@ -25,9 +25,6 @@ $$H(p,q)=H(p)+D_{\mathrm{KL}}(p\,\|\,q)\ \ge\ H(p)=-\sum_x p(x)\log_2 p(x).$$
 
 $$|\psi\rangle=\alpha|0\rangle+\beta|1\rangle,\qquad |\alpha|^2+|\beta|^2=1.$$
 
-The long version, with proofs and interactive demos, is in **[Math of AI](https://toniferr.github.io/math-of-ai/)** and
-**[Math of Quantum](https://toniferr.github.io/math-of-quantum/)**.
-
 ## 🔭 Currently
 
 - Expanding the GitOps course module by module (Kustomize, Helm, multi-environment, secrets…).
