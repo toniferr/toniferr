@@ -1,27 +1,32 @@
 # Hi, I'm Toni 👋
 
-🌐 **[toniferr.github.io](https://toniferr.github.io/)** · 💼 **[LinkedIn](https://es.linkedin.com/in/antonio-ferreiro-couto)**
+*Computer science, from the bottom up, in five lines of mathematics.*
 
----
+**1 · Logic.** One gate is enough for every Boolean function $f:\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace$:
 
-## ✨ Featured
+$$\mathrm{NAND}(x,y)=1-xy,\qquad \neg x=\mathrm{NAND}(x,x),\qquad x\wedge y=\neg\,\mathrm{NAND}(x,y).$$
 
-| | Project | What it is |
-| --- | --- | --- |
-| ∑ | **[Math of AI](https://toniferr.github.io/math-of-ai/)** · [repo](https://github.com/toniferr/math-of-ai) | *Why does AI work?* Ten chapters from Turing and Shannon to Transformers and LLMs, with theorems, proofs, history and interactive demos. EN · ES |
-| ψ | **[Math of Quantum](https://toniferr.github.io/math-of-quantum/)** · [repo](https://github.com/toniferr/math-of-quantum) | *What makes a quantum computer different?* From bits to qubits, entanglement, Shor, Grover and error correction, with exact in-browser simulations. EN · ES |
-| ☸️ | **[GitOps Training Lab](https://toniferr.github.io/gitops-training-lab/)** · [repo](https://github.com/toniferr/gitops-training-lab) | A hands-on, incremental training on Kubernetes, Configuration as Code, GitOps and Flux. |
-| 🏛️ | **[Architect Study Hub](https://toniferr.github.io/architect-study-hub/)** · [repo](https://github.com/toniferr/architect-study-hub) | An open knowledge base on software architecture, platform engineering, AI and cloud, with an AI study assistant. |
-| 🔐 | **[cryptoKit](https://github.com/toniferr/cryptoKit)** | A Java desktop app to encrypt, decrypt and hash data with multiple algorithms. My most-starred project. |
+**2 · Automata.** Finite memory makes a finite automaton, $M=(Q,\Sigma,\delta,q_0,F)$ with $\delta:Q\times\Sigma\to Q$.
+It recognises exactly the regular languages, and it cannot count: $\lbrace a^nb^n\rbrace$ is out of reach. Climbing
+Chomsky's hierarchy adds power:
 
-The two math sites share a philosophy: no frameworks, a Python standard-library build, formulas compiled to native
-MathML, a strict CSP and no trackers. They are short books you can play with:
+$$\mathsf{REG}\subsetneq\mathsf{CFL}\subsetneq\mathsf{CSL}\subsetneq\mathsf{RE}.$$
 
-$$
-\underbrace{H(p, q) = H(p) + D_{\mathrm{KL}}(p \,\|\, q)}_{\text{what every LLM minimizes}}
-\qquad\qquad
-\underbrace{|\psi\rangle = \alpha|0\rangle + \beta|1\rangle,\ \ |\alpha|^2 + |\beta|^2 = 1}_{\text{what every qubit is}}
-$$
+**3 · Computation.** An unbounded tape gives Turing's machine, $\delta:Q\times\Gamma\to Q\times\Gamma\times\lbrace L,R\rbrace$,
+and the first impossible problem: no program decides, for every program, whether it halts.
+
+$$\nexists\,H\ \ \forall\,M,w:\quad H(\langle M\rangle,w)=\mathbf{1}[\,M \text{ halts on } w\,].$$
+
+**4 · Information.** Learning is compression: every LLM minimizes the cross-entropy between the data and its model.
+
+$$H(p,q)=H(p)+D_{\mathrm{KL}}(p\,\|\,q)\ \ge\ H(p)=-\sum_x p(x)\log_2 p(x).$$
+
+**5 · Quantum.** Swap the 1-norm of probabilities for the 2-norm of complex amplitudes, and a bit becomes a qubit:
+
+$$|\psi\rangle=\alpha|0\rangle+\beta|1\rangle,\qquad |\alpha|^2+|\beta|^2=1.$$
+
+The long version, with proofs and interactive demos, is in **[Math of AI](https://toniferr.github.io/math-of-ai/)** and
+**[Math of Quantum](https://toniferr.github.io/math-of-quantum/)**.
 
 ## 🔭 Currently
 
